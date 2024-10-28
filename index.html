@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test de Comprensión Lectora</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h2 id="titleInit">Test Número 24</Nav></h2>
+        <p id="paragraphInit">
+            Este test busca medir tu velocidad y comprensión
+            lectora.<br>
+            Te recomendamos que lo hagas en un ambiente
+            calmado, sin distracciones y con buena iluminación.<br>
+            Esta lectura la debes hacer basado en las técnicas
+            que ya hayas empezado a usar. En las primeras
+            semanas, no debes preocuparte mucho por la
+            comprensión lectora, ya que ese es un proceso que se
+            va a ir dando paulatinamente.<br>
+            Cuando des clic en INICIAR se te presentará la lectura
+            y el sistema llevará un cronómetro que medirá tu
+            velocidad. Al finalzar de leer todo el texto debes dar
+            clic en el botón TERMINAR.<br>
+        </p>
+        <button id="startButton">Iniciar</button>
+        <div id="textContainer" class="hidden">
+            <p id="textToRead">
+                Buscando a Dios
+                <br><br>
+                Juan nunca había tenido una clara noción de Dios. Su figura o imagen desde niño había sido algo confusa. Su padre era ateo, su madre creyente pero no muy practicante y su abuela devota.
+                <br><br>
+                Creció en un hogar donde las opiniones estaban divididas. Había quienes no creían en absoluto en Dios, quienes lo amaban profundamente y quienes se adherían a él con algo de tibieza. Siempre había ido a colegio laico, por lo que tampoco su educación lo había ayudado a entender quién era verdaderamente Dios y, lo más importante, si existía o no.
+                <br><br>
+                Había escuchado tantas cosas que no sabía qué creer y qué no. Un anciano de barba blanca, un ser superior y milagroso, un padre piadoso que todo lo perdonaba y hasta alguien que castigaba a las personas cuando se comportaban indebidamente. Una abuela que lo buscaba en una iglesia rezando un rosario, una madre que lo respetaba pero se acordaba de él poco y nada, y un padre que sostenía que Dios no existía, que tampoco había un cielo y menos aún un paraíso al cual aspirar.
+                <br><br>
+                Dios intrigaba mucho a Juan desde muy pequeño; le preguntaba a uno y a otro, y cada uno le decía qué creía o dejaba de creer. Algunas veces, acompañaba a su abuela a la iglesia, pero no terminaba de comprender a ese ser tan grande, tan misterioso y tal vez tan inexistente. ¿Tanta gente podría creer en alguien que no existía? Se preguntaba el niño. Algo le decía a ese pequeño que Dios era real, no podía comprobarlo sin dudas, pero algo había dentro de él que hacía que lo buscase de uno u otro modo.
+                <br><br>
+                ¿Cómo encontrarlo si su padre le aseguraba que era todo un invento? Y si su padre estaba equivocado y sí existía, ¿era tan bueno como todos decían? ¿Perdonaba o castigaba? ¿Por qué dejaba que hubiera niños con hambre? ¿Por qué permitía las guerras? Juan se hacía muchas preguntas, necesitaba respuestas, el tiempo pasaba y Juan seguía buscando.
+                <br><br>
+                Era un niño inteligente y, sobre todo, sensible. Un día comenzó a pensar que tal vez estaba buscando en lugares equivocados y que, si ese Dios misericordioso existía, realmente tenía que estar en un lugar hermoso, de privilegio, muy cerca de cada uno.
+                <br><br>
+                Fue entonces que Juan comenzó un camino distinto. Miró su corazón, admiró la naturaleza y se dio cuenta que no se entendía semejante belleza sin un Creador detrás de ella. Sintió casi como pudiendo tocarlo el amor que profesaba a sus seres queridos o a su mascota y se dio cuenta que en ese amor estaba Dios.
+                <br><br>
+                Analizó a los seres humanos y corroboró que solo Dios podría haber creado el milagro de la vida. Entendió, con el tiempo, que tanto nos amó Dios que nos dio libre albedrío, y recién allí pudo conciliar la idea de que coexistieran males, guerras, odios y Dios.
+                <br><br>
+                Comprendió que creer o no creer es un don, que tener fe es un milagro y que vale la pena tenerla. Ya no le importó demasiado preguntar qué pensaban los demás. Respetaba la opinión de su padre, pero le daba mucha pena pensar que no creyese en un cielo que lo esperaba al final del camino.
+                <br><br>
+                Comprendió que cada uno tiene un vínculo con Dios que lo construye a su modo; su abuela tenía uno, su madre otro y seguramente él tendría uno distinto. Finalmente, luego de mucha búsqueda, Juan encontró a Dios. Después de muchas preguntas, muchos cuestionamientos, ilusiones y decepciones.
+                <br><br>
+                Tras haber recorrido un camino, el pequeño se dio cuenta que Dios habitaba en él, que siempre había estado allí y lo más importante: que siempre estaría.
+                <br><br>
+                https://www.encuentos.com/cuentos-cortos-para-reflexionar/buscando-a-dios-2/escritora - Liana Castello - 615 palabras
+            </p>
+            
+                         
+            <div id="timer">Tiempo transcurrido: <span id="timerValue">0</span> segundos</div>
+            <button id="finishButton">Terminar</button>
+        </div>
+        <div id="questionnaire" class="hidden">
+            <h2>Test de Comprensión Lectora</h2>
+            <form id="quizForm">
+                <ol id="questionList">
+                    <!-- Las preguntas se añadirán aquí dinámicamente con JavaScript -->
+                </ol>
+                <button type="submit">Terminar</button>
+            </form>
+        </div>
+        <div id="results" class="hidden">
+            <h2>Resultados</h2>
+            <div id="wordCount">Palabras leídas: <span id="wordCountValue"></span></div>
+            <div id="readingSpeed">Velocidad de lectura: <span id="readingSpeedValue"></span> palabras por minuto</div>
+            <div id="comprehension">Comprensión lectora: <span id="comprehensionValue"></span>%</div>
+            <div id="timeResult">Tiempo transcurrido: <span id="timeResultValue"></span> segundos</div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
